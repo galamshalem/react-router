@@ -16,6 +16,7 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   <summary>Table of Contents</summary>
 
 - [React Router Releases](#react-router-releases)
+  - [v8.5.4](#v854)
   - [v8.5.3](#v853)
   - [v8.5.2](#v852)
   - [v8.5.1](#v851)
@@ -123,6 +124,17 @@ We manage release notes in this file instead of the paginated Github Releases Pa
   - [v7.0.0](#v700)
 
 </details>
+
+## v8.5.4
+
+Date: 2026-11-24
+
+### Patch Changes
+
+- `react-router` - Stop a navigation interrupted while awaiting `getContext`, so it no longer commits after the newer navigation or leaves `navigation.state` stuck at `"loading"` ([#15718](https://github.com/remix-run/react-router/pull/15718))
+- `@react-router/express` - Fix request URL ports behind Express proxies by using the port from `X-Forwarded-Host` when Express trusts the connection. The proxy must include any non-default public port in `X-Forwarded-Host` so that the request URL matches the action origin. ([#15760](https://github.com/remix-run/react-router/pull/15760))
+
+**Full Changelog**: [`v8.5.3...v8.5.4`](https://github.com/remix-run/react-router/compare/react-router@8.5.3...react-router@8.5.4)
 
 ## v8.5.3
 

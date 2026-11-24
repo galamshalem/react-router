@@ -1,5 +1,11 @@
 # `react-router`
 
+## v8.5.4
+
+### Patch Changes
+
+- Stop a navigation interrupted while awaiting `getContext`, so it no longer commits after the newer navigation or leaves `navigation.state` stuck at `"loading"` ([#15718](https://github.com/remix-run/react-router/pull/15718))
+
 ## v8.5.3
 
 ### Patch Changes
